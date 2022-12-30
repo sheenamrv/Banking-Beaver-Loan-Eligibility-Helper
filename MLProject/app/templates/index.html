@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href='/static/css/main.css'/>
+        <title>Banking Beaver Loan Approval</title>
+    </head>
+    <body>
+        <img src='static\Banking Beaver 1.png'>  
+        <h1>Banking Beaver</h1>
+        <h2>Loan Eligibility Helper</h2>
+        <h3>Please answer the following questions to determine if you are eligible for a loan.</h3>
+        
+        <br>
+        <form method="POST", action="{{ url_for('predict')}}">
+            <p>Gender</p>
+            <input type="radio" id="Male" name="Gender" value="Male">
+                <label for="Male"><span>Male</span></label><br>
+            <input type="radio" id="Female" name="Gender" value="Female">
+                <label for="Female"><span>Female</span></label><br>
+
+            <p>Married?</p>
+            <input type="radio" id="Yes" name="Married" value="Yes">
+                <label for="Yes">Yes</label><br>
+            <input type="radio" id="No" name="Married" value="No">
+                <label for="No">No</label><br>
+
+            <p>Number of Dependents</p>
+                <select name="Dependents" id="Dependents">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3+">3+</option>
+                </select>
+            <br>
+            <br>
+            <p>Completed University Education?</p>
+            <input type="radio" id="Yes" name="Education" value="Yes">
+                <label for="Yes">Yes</label><br>
+            <input type="radio" id="No" name="Education" value="No">
+                <label for="No">No</label><br>
+         
+            <p>Self-Employed?</p>
+            <input type="radio" id="Yes" name="Self-Employed" value="Yes">
+                <label for="Yes">Yes</label><br>
+            <input type="radio" id="No" name="Self-Employed" value="No">
+                <label for="No">No</label><br>
+  
+            <p>Applicant Income</p>
+            <div class="inputBox">
+                <input type="text" id="Applicant-Income" name="Applicant-Income" placeholder="Input Applicant Income" required="required">
+            </div>
+            <br>
+     
+            <p>Co-Applicant Income</p>
+            <div class="inputBox">
+                <input type="text" id="Co-Applicant-Income" name="Co-Applicant-Income" placeholder="Input Co-Applicant Income" required="required">
+            </div>
+            <br>
+        
+            <p>Loan Amount</p>
+            <div class="inputBox">
+                <input type="text" id="Loan-Amount" name="Loan-Amount" placeholder="Input Loan Amount" required="required">
+            </div>
+            <br>
+            
+            <p>Loan Amount Term</p>
+            <div class="inputBox">
+                <input type="text" id="Loan-Amount-Term" name="Loan-Amount-Term" placeholder="Input Term in Months" required="required">
+            </div>
+            <br>
+            
+            <p>Credit History</p>
+            <select name="Credit-History" id="Credit-History">
+                <option value="All Debts Paid">All Debts Paid</option>
+                <option value="All Debts Not Paid">All Debts Not Paid</option>
+            </select>
+            <br>
+            <br>
+            <p>Area of Residence?</p>
+            <select name="Property-Area" id="Property-Area">
+                <option value="Rural">Rural</option>
+                <option value="Semi-Urban">Semi-Urban</option>
+                <option value="Urban">Urban</option>
+            </select>
+            <br>
+            <br>
+            
+            <input type="submit", value="Submit">
+        </form>
+        <br>
+        <br>
+        <!-- <h3>{{text}}</h3> -->
+    
+    </body>
+</html>

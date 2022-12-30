@@ -1,0 +1,127 @@
+body {
+    /* background: linear-gradient(#e66465, #9198e5); */
+    /* background: linear-gradient(#1d3951 90%, #FF7A8A ); */
+    background: #1d3951;
+    /* margin-top: 50px; */
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h1 {
+    font-family: Georgia;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+}
+h2 {
+    font-family: Georgia;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: small;
+
+}
+
+.result {
+    font-size: large;
+    color: #f76576;
+}
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: large;
+}
+
+.inputBox input {
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+label {
+    /* display: block; */
+    cursor: pointer;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+input[type='radio']{
+    margin-bottom: 16px;
+}
+
+input[type='radio']:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    position: relative;
+    background-color: #f76576;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+#Dependents, #Credit-History, #Property-Area {
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type='submit']{
+    margin-top: 25px;
+    position: relative;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #f76576;
+    color: white;
+}
+
+input[type='submit']:hover{
+    margin-top: 25px;
+    position: relative;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #f34156;
+    color: white;
+}
+
+a{
+    margin-top: 25px;
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #f76576;
+    color: white;
+}
+
+a:hover{
+    margin-top: 25px;
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #f34156;
+    color: white;
+}

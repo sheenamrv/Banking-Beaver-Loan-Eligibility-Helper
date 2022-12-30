@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href='/static/css/main.css'/>
+        <title>Banking Beaver Loan Approval</title>
+    </head>
+    <body>
+        <img src='static\Banking Beaver 1.png'>  
+        <h1> Banking Beaver</h1>
+        <h2> Loan Eligibility:</h2>
+
+        {%if data == 1%}
+            <h3 class="result">Congratualations, you are eligible for a loan with Banking Beaver!</h3>  
+
+        {%else%}
+            <h3 class="result">Unfortunately, you are not eligible for a loan with Banking Beaver.</h3>
+
+        {%endif%}
+            <br><br><br>
+            <a href='/'>Home Page</a>
+
+
+    </body>
+
+</html>
